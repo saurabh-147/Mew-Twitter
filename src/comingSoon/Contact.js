@@ -54,11 +54,16 @@ const Contact = () => {
     <Container>
       <h1 className="contactHead">Contact us</h1>
       <form>
-        <input type="text" name="name" placeholder="Name" onChange={handleChange} value={details.name} />
-        <input type="email" name="email" placeholder="Email" onChange={handleChange} value={details.email} />
-        <input type="text" name="subject" placeholder="Subject" onChange={handleChange} value={details.subject} />
-        <input type="text" name="phoneno" placeholder="Enter your no" onChange={handleChange} value={details.phoneno} />
-        <textarea name="message" placeholder="Message" onChange={handleChange} value={details.message} />
+        <label>Name</label>
+        <input type="text" name="name" onChange={handleChange} value={details.name} />
+        <label>Email</label>
+        <input type="email" name="email" onChange={handleChange} value={details.email} />
+        <label>Subject</label>
+        <input type="text" name="subject" onChange={handleChange} value={details.subject} />
+        <label>Enter a no.</label>
+        <input type="text" name="phoneno" onChange={handleChange} value={details.phoneno} />
+        <label>Message</label>
+        <textarea name="message" onChange={handleChange} value={details.message} />
 
         <button type="submit" onClick={onSubmit}>
           Submit
@@ -89,7 +94,7 @@ const Container = styled.div`
     max-width: 350px;
     min-width: 250px;
     height: 40px;
-
+    border: 2px;
     margin: 0.5rem 0;
     background-color: #f5f5f5;
     box-shadow: 0px 14px 9px -15px rgba(0, 0, 0, 0.25);
@@ -105,6 +110,7 @@ const Container = styled.div`
     max-width: 350px;
     min-width: 250px;
     height: 50px;
+    border: 2px;
     margin: 0.5rem 0;
     background-color: #f5f5f5;
     box-shadow: 0px 14px 9px -15px rgba(0, 0, 0, 0.25);
@@ -116,15 +122,15 @@ const Container = styled.div`
     }
   }
   button {
-    width: 75%;
+    width: 80%;
     max-width: 350px;
     min-width: 250px;
-    height: 40px;
+    height: 60px;
     border: none;
 
     box-shadow: 0px 14px 9px -15px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
-    background-color: red;
+    background-color: #ff7f50;
     color: #fff;
     font-weight: 600;
     cursor: pointer;
